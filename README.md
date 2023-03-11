@@ -113,4 +113,31 @@ for example:
 ```
 cd drive/MyDrive/ColabProjects/EMNIST-CNN
 ```
-confirm using `!ls` command in the next cell.
+confirm using `!ls` command in the next cell.<br>
+
+
+11. **Initialize git repository**<br>
+```
+!git init
+```
+```
+# Configure user name and email (if not already)
+!git config user.name "shre-db"
+!git config user.email "shreyasdb99@gmail.com"
+```
+```
+# Check Staging Area
+!git status
+```
+Go to the GitHub repository. In Quick setup section, You have the options to set up in desktop, use HTTPS or SSH. Select SSH and copy the url. for example `git@github.com:shre-db/EMNIST-CNN.git`. This URL specifies the location of a Git repository hosted on GitHub using the SSH protocol and will be used to add remote origin as shown below. In the code snippet below replace `git@github.com:shre-db/EMNIST-CNN.git` with the URL you've copied.
+```
+# Create README.md file Add files to the staging area, Commit the changes and Push
+!echo "# EMNIST-CNN" >> README.md
+!git add README.md notebook.ipynb
+!git commit -m "Add README and notebook" -m "This commit includes a README file and a notebook containing code for preliminary setup."
+!git branch -M main
+!git remote add origin git@github.com:shre-db/EMNIST-CNN.git
+!git push -u origin main
+```
+
+That's it you've successfully established an SSH connection with GitHub and can now interact directly from Colab notebook. After executing code snippets in step 11, you could consider commenting it out to avoid acciedentally running these cells again and as a result reinitializing the git repository the next time you run this notebook. You could dedicate a seperate set of notebook cells to run common commands to check status, add, commit, pull or push changes.
