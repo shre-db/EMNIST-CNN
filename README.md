@@ -30,7 +30,7 @@ If you would like to train a CNN yourself, I recommend [Google Colab](https://co
 Why is this necessary?<br>Training Deep Learning models are computationally intensive, consequently people utilize GPUs in addition to CPUs for faster execution of the task. If you do not have household GPUs, you can make use of resources provided by cloud services like Google Colab, AWS, Azure or others. That said, there are limitations to the usage of these resources. You can find out more about Google Colab through the link provided above.
 <br>
 <br>
-Let's kick things off by breifly describing the procedure.
+Let's kick things off by briefly describing the procedure.
 The Idea is to setup local repository on your Google Drive, mount the Google Drive on Colab and then use SSH protocol to interact with a remote repository (GitHub).
 To do this you need a Secure Shell (SSH) key pair. This key pair has a public and a private key. The key pair can be generated using Git Bash (for Windows) or Terminal (Mac or Linux) or even on Google Colab's code cells with a '!' sign preceeding commands. The private key is then stored on your Google Drive and the public key on GitHub. The next step is to add the private key to an SSH agent. SSH agents provide a secure and efficient way to manage and use SSH keys for remote authentication.
 
@@ -140,4 +140,24 @@ Go to the GitHub repository. In Quick setup section, You have the options to set
 !git push -u origin main
 ```
 
-That's it you've successfully established an SSH connection with GitHub and can now interact directly from Colab notebook. After executing code snippets in step 11, you could consider commenting it out to avoid acciedentally running these cells again and as a result reinitializing the git repository the next time you run this notebook. You could dedicate a seperate set of notebook cells to run common commands to check status, add, commit, pull or push changes.
+That's it you've successfully established an SSH connection with GitHub and can now interact directly from Colab notebook. After executing code snippets in step 11, you could consider commenting it out to avoid accidentally executing these cells again and as a result reinitializing the git repository the next time you run this notebook. You could dedicate a seperate set of notebook cells to run common commands to check status, add, commit, pull or push changes.
+
+Contributing
+------------
+Thank you for your interest in this project! At this time we are not accepting contribution from external collaborators. If you have any feedback or suggestions, please feel free to create an issue or contact us directly.
+
+Credits
+-------
+- Data for this project was collected through [torchvision](https://github.com/pytorch/vision/tree/main/torchvision) library.
+- I would like to thank [Dr. Mike X Cohen](https://www.mikexcohen.com/) for his guidance in designing Neural Networks. Please visit his [website](https://www.mikexcohen.com/) to find out more about him.
+
+License
+-------
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+Contact
+-------
+- **Name**: Shreyas
+- **Email**: shreyasdb99@gmail.com
+- **GitHub**: [shre-db](https://github.com/shre-db)
+- **Instagram**: [shryzium](https://www.instagram.com/shryzium/)
