@@ -1,4 +1,5 @@
 # EMNIST-CNN
+![cover](images/EMNIST_cover.png)
 
 Overview
 --------
