@@ -107,7 +107,8 @@ Google Colab uses a Virtual Machine (VM) to provide computing resources for your
 !ssh -T git@github.com
 ```
 You may a message like this: "Warning: Permanently added the ECDSA host key for IP address '**.**.***.***' to the list of known hosts.
-Hi user-name! You've successfully authenticated, but GitHub does not provide shell access."
+Hi user-name! You've successfully authenticated, but GitHub does not provide shell access."<br>
+
 11. **Navigate to the project folder**<br>
 for example:
 ```
@@ -115,8 +116,7 @@ cd drive/MyDrive/ColabProjects/EMNIST-CNN
 ```
 confirm using `!ls` command in the next cell.<br>
 
-
-11. **Initialize git repository**<br>
+12. **Initialize git repository**<br>
 ```
 !git init
 ```
@@ -140,7 +140,7 @@ Go to the GitHub repository. In Quick setup section, You have the options to set
 !git push -u origin main
 ```
 
-That's it you've successfully established an SSH connection with GitHub and can now interact directly from Colab notebook. After executing code snippets in step 11, you could consider commenting it out to avoid accidentally executing these cells again and as a result reinitializing the git repository the next time you run this notebook. You could dedicate a seperate set of notebook cells to run common commands to check status, add, commit, pull or push changes.
+That's it you've successfully established an SSH connection with GitHub and can now interact directly from Colab notebook. After executing code snippets in step 12, you could consider commenting it out (cells in step 12 only) to avoid accidentally executing these cells again and as a result reinitializing the git repository the next time you run this notebook. You could dedicate a seperate set of notebook cells to run common commands to check status, add, commit, pull or push changes.
 
 Contributing
 ------------
